@@ -1,0 +1,42 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    // One-way if statement
+    int num1 = 5;
+    if(num1 > 0) {
+        cout << "num1 is positive" << endl;
+    }
+    
+    // Two-way if-else statement
+    int num2 = -2;
+    if(num2 > 0) {
+        cout << "num2 is positive" << endl;
+    } else {
+        cout << "num2 is negative" << endl;
+    }
+    
+    // Multi-way if-else statement
+    int num3 = 0;
+    if(num3 > 0) {
+        cout << "num3 is positive" << endl;
+    } else if(num3 < 0) {
+        cout << "num3 is negative" << endl;
+    } else {
+        cout << "num3 is zero" << endl;
+    }
+    
+    // Nested if statement
+    int num4 = 10;
+    if(num4 > 0) {
+        if(num4 % 2 == 0) {
+            cout << "num4 is positive and even" << endl;
+        } else {
+            cout << "num4 is positive and odd" << endl;
+        }
+    } else {
+        cout << "num4 is not positive" << endl;
+    }
+    
+    return 0;
+}
